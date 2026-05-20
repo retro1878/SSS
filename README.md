@@ -28,6 +28,16 @@ To install to a custom location:
 INSTALL_DIR=~/.local/bin ./install.sh
 ```
 
+**Behind a SOCKS5 proxy?** Pass it to git before cloning:
+
+```bash
+git clone --config "http.proxy=socks5h://127.0.0.1:1080" https://github.com/retro1878/SSS.git
+cd SSS
+./install.sh
+```
+
+`socks5h` routes DNS through the proxy too — use `socks5` if you want local DNS resolution.
+
 ---
 
 ## Usage
