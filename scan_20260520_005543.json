@@ -1,0 +1,2113 @@
+{
+  "scan_time": "2026-05-20T00:55:43.797578Z",
+  "total": 234,
+  "reachable": 52,
+  "results": [
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 34.267107000005126,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 23.623014999998304,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 35.3403969999988,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 36.53784399998017,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 31.26827200000548,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 28.629176999999117,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.362173999989,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.479906999984,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.096464999999,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.490832000007,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10017.979835000006,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 16.012246000002506,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10022.859495999995,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10015.345440999994,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10034.668871999998,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10016.50616499998,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 16.007183999988683,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10026.678177000009,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10020.705378999992,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10023.154368000007,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10023.124109000008,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10022.425486000004,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10056.737242999987,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 15.36813300000972,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 18.165527999997266,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10021.168343,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10051.65921699998,
+      "error": ""
+    },
+    {
+      "domain": "hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10059.09670700001,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10018.499942999995,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 19.301959000017632,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10020.247394999984,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10011.64387899999,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.79965899998,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.341500999995,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.611587,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10017.373808000002,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.251048999999,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 24.263077999989946,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.132212999986,
+      "error": ""
+    },
+    {
+      "domain": "api.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.413539000012,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 15.899695999991081,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.574499999984,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10012.721779000003,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.021919999985,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 17.339254000006576,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10012.762027999997,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 13.821406999994679,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.483367999987,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10013.242848000005,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.024369000006,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10018.840463999994,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10013.562086000007,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.968401,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 14.693874000016649,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10012.368477999986,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.023767000002,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 373.6782119999873,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.88695800001,
+      "error": ""
+    },
+    {
+      "domain": "assets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.659945000005,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.856908999998,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.119938999982,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 16.797362999994903,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.905416999994,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 14.474541999987878,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10018.615444000005,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.141805000014,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.438499999987,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.796573000018,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.054656999979,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10017.283055999997,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.689998000018,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 13.323965000012095,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.876971000002,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.41124500002,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.358308000003,
+      "error": ""
+    },
+    {
+      "domain": "imgs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.341348000016,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.209409999983,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.458509999997,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.035103000026,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.910705999999,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 209.03574099997968,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 614.4455030000131,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 619.7683439999935,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.933084000006,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.872351999997,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.186423000012,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.499336,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.26625800002,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 18.78002699999115,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.940034999994,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.46906999999,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.493711,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.625389000003,
+      "error": ""
+    },
+    {
+      "domain": "js.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.264540000004,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.118663999994,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.714609000004,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.962551999986,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.61585699999,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.599809000003,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.307596999999,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.206424000007,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 250.36087800000928,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 270.80281800002126,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 277.98791399999345,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 13.677236999996012,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.827666000007,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.87943200002,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.984206000012,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.677648999997,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.143743000004,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10016.419266000014,
+      "error": ""
+    },
+    {
+      "domain": "newassets.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.003627999984,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.818411999982,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.981981000015,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10013.526350000007,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.810772999997,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.0214,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.803794000012,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.260276999987,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.288006999976,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.777791,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.095809999995,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.292706000002,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.835527000007,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.850249000001,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 460.39882299999135,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 472.7988329999846,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 439.8897719999866,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 403.86037299998634,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.904871000002,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10011.448578999989,
+      "error": ""
+    },
+    {
+      "domain": "dashboard.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10012.974077999985,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 44.94512400000872,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 243.3436219999976,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 13.4226979999994,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.149168000022,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.967076,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.834224999982,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.410487999981,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.738700000005,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 15.425256000014542,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.98064,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.496664999995,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.685767999992,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.07745400002,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.55303099999,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.018567000003,
+      "error": ""
+    },
+    {
+      "domain": "health-check.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.427485999997,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.62964000001,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.036441000006,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.309489000008,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.366346999997,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 49.6966059999977,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 218.53534000001673,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 459.43734700000505,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.464715999991,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.061366000002,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.551349999982,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.931343,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 14.996291000016981,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.315686000007,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.480996999991,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.675701999982,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.260603999986,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.634013999996,
+      "error": ""
+    },
+    {
+      "domain": "www.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.382869000006,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.000925999999,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.176015000008,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.995814000002,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.566647000018,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.370526999988,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.643119000004,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10011.953333999998,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.924691999999,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.415173000009,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10013.706506000006,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 628.0729830000098,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 119.573330999998,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 342.55842999999686,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 608.986705999996,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.510464000015,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.548077000005,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.507496999982,
+      "error": ""
+    },
+    {
+      "domain": "three-cust.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.159940000018,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 505.4877849999855,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 564.4675020000136,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.477482000022,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.162606000018,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.318855999989,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 16.07515900002454,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.878633000018,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.062983000002,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.393955999969,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.699027999972,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 13.661184000000048,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.732986000041,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.874501999997,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.360919999983,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.986540999984,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10011.45893200001,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.768669000005,
+      "error": ""
+    },
+    {
+      "domain": "accounts.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.519958999983,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.911368999976,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.925074999985,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.955662000006,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10015.654552,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.209.68",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 428.0139129999725,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.224",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 637.7211099999727,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.179.179",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 517.2911509999949,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.187382999979,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.609873999978,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.159191000013,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.163164000029,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.250266000005,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.964753000011,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.469355999978,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.102201999951,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.121209999956,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.76",
+      "port": 443,
+      "http_code": 403,
+      "success": true,
+      "latency_ms": 321.21517199999516,
+      "error": ""
+    },
+    {
+      "domain": "jobs.hcaptcha.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.04725800001,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.92.207",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.363990999987,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.92.207",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.55482099997,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.224",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10007.92638400003,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.179.179",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.778232999997,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.179.179",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.142595000014,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.179.179",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.829504000005,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.179.179",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10008.99215999999,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.209.68",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.942392999961,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.209.68",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.521866,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.209.68",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.684082000036,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "172.67.209.68",
+      "port": 2083,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10010.028425999963,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.76",
+      "port": 2053,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.630876000017,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.76",
+      "port": 8443,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.121358999948,
+      "error": ""
+    },
+    {
+      "domain": "sni-cloudflare.com",
+      "ip": "104.21.53.76",
+      "port": 2096,
+      "http_code": 0,
+      "success": false,
+      "latency_ms": 10009.72275600003,
+      "error": ""
+    }
+  ]
+}
