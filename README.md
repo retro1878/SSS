@@ -66,6 +66,12 @@ sni_scanner --output results.json
 # Use custom domain and IP:port lists
 sni_scanner --domains domains.txt --ips ips.txt
 
+# Scan all of Cloudflare's published IP ranges on port 443
+sni_scanner --cloudflare-ranges 443
+
+# Scan Cloudflare ranges on multiple ports, sample 50 IPs per range
+sni_scanner --cloudflare-ranges 443,8443,2053 --sample 50
+
 # Show errors inline (timeouts, connection refused, etc.)
 sni_scanner --verbose
 ```
@@ -78,7 +84,9 @@ sni_scanner --verbose
 | `--timeout`, `-t` | `15` | Per-probe timeout in seconds |
 | `--output`, `-o` | auto | JSON output file (also saves `_working.sh`) |
 | `--domains`, `-d` | built-in | File with one domain per line |
-| `--ips`, `-i` | built-in | File with one `IP:PORT` per line |
+| `--ips`, `-i` | built-in | File with `IP:PORT` entries; supports CIDR ranges |
+| `--cloudflare-ranges`, `-c` | off | Scan all Cloudflare IP ranges on given ports (e.g. `443` or `443,8443`) |
+| `--sample`, `-s` | `20` | Max IPs randomly sampled per CIDR range (`0` = unlimited) |
 | `--working-only` | off | Only print successful probes during scan |
 | `--verbose`, `-v` | off | Show error reason next to failed probes |
 
@@ -93,14 +101,22 @@ api.hcaptcha.com
 www.example.com
 ```
 
-**ips.txt** — one `IP:PORT` per line:
+**ips.txt** — one entry per line; plain IPs, CIDR ranges, and multiple ports are all supported:
 ```
+# Plain IP, single port
 104.21.53.76:443
-172.67.179.179:443
-104.21.53.224:8443
+
+# CIDR range — expanded to all IPs in the subnet on port 443
+104.21.53.0/24:443
+
+# CIDR range on multiple ports (comma-separated)
+172.67.0.0/16:443,8443,2053
 ```
 
 Lines starting with `#` are treated as comments.
+
+> **Tip:** Large ranges (e.g. `/13`) can produce hundreds of thousands of IPs.
+> Use `--sample N` to randomly pick N IPs per range and keep the scan manageable.
 
 ---
 

@@ -9,15 +9,22 @@ Usage:
 
 Curl technique:
     curl https://<domain>:<port> --resolve '<domain>:<port>:<ip>' -sk -o /dev/null -w "%{http_code}"
+
+IP list entries support plain IPs, CIDR ranges, and mixed files:
+    104.21.53.76:443
+    104.21.53.0/24:443        (expands to 256 IPs on port 443)
+    172.67.0.0/16:443,8443    (expands range across multiple ports)
 """
 
 import argparse
 import concurrent.futures
+import ipaddress
 import json
+import random
 import subprocess
 import sys
 import time
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
 
@@ -61,9 +68,80 @@ DEFAULT_DOMAINS = [
     "sni-cloudflare.com",
 ]
 
+# Cloudflare's published IPv4 ranges (source: cloudflare.com/ips-v4)
+CLOUDFLARE_RANGES = [
+    "103.21.244.0/22",
+    "103.22.200.0/22",
+    "103.31.4.0/22",
+    "104.16.0.0/13",
+    "104.24.0.0/14",
+    "108.162.192.0/18",
+    "131.0.72.0/22",
+    "141.101.64.0/18",
+    "162.158.0.0/15",
+    "172.64.0.0/13",
+    "173.245.48.0/20",
+    "188.114.96.0/20",
+    "190.93.240.0/20",
+    "197.234.240.0/22",
+    "198.41.128.0/17",
+]
+
 # HTTP codes that indicate the SNI trick is working (server responded)
 SUCCESS_CODES = {200, 204, 301, 302, 307, 308, 400, 403, 404, 405, 429}
 # 403/404/400 from the origin still means the connection went through
+
+
+# ── IP range expansion ───────────────────────────────────────────────────────
+
+def expand_entry(entry: str, sample: int) -> list[tuple[str, int]]:
+    """
+    Parse one IP list entry into (ip, port) tuples.
+
+    Supported formats:
+        1.2.3.4:443               → single IP, single port
+        1.2.3.0/24:443            → CIDR range, single port
+        1.2.3.0/24:443,8443,2053  → CIDR range, multiple ports
+    """
+    # Split off port(s) — last colon-separated token(s) after the IP/CIDR
+    # CIDR contains '/', so split on the last ':' only when no '/' in port part
+    last_colon = entry.rfind(":")
+    ip_part = entry[:last_colon]
+    port_part = entry[last_colon + 1:]
+    ports = [int(p.strip()) for p in port_part.split(",") if p.strip().isdigit()]
+
+    if "/" in ip_part:
+        network = ipaddress.IPv4Network(ip_part, strict=False)
+        all_hosts = [str(h) for h in network.hosts()] or [str(network.network_address)]
+        if sample and len(all_hosts) > sample:
+            hosts = random.sample(all_hosts, sample)
+        else:
+            hosts = all_hosts
+    else:
+        hosts = [ip_part]
+
+    return [(ip, port) for ip in hosts for port in ports]
+
+
+def expand_ip_ports(entries: list[str], sample: int) -> list[tuple[str, int]]:
+    result = []
+    for entry in entries:
+        try:
+            result.extend(expand_entry(entry, sample))
+        except Exception as e:
+            print(f"  [WARN] Skipping invalid entry '{entry}': {e}", file=sys.stderr)
+    # Deduplicate while preserving order
+    seen: set[tuple[str, int]] = set()
+    deduped = []
+    for item in result:
+        if item not in seen:
+            seen.add(item)
+            deduped.append(item)
+    return deduped
+
+
+def build_cloudflare_entries(ports: list[int]) -> list[str]:
+    return [f"{cidr}:{','.join(str(p) for p in ports)}" for cidr in CLOUDFLARE_RANGES]
 
 
 # ── Data types ───────────────────────────────────────────────────────────────
@@ -121,13 +199,8 @@ def probe(domain: str, ip: str, port: int, timeout: int) -> ScanResult:
                           success=False, latency_ms=latency, error=str(e))
 
 
-def build_tasks(domains: list[str], ip_ports: list[str]) -> list[tuple]:
-    tasks = []
-    for domain in domains:
-        for ip_port in ip_ports:
-            ip, port_str = ip_port.rsplit(":", 1)
-            tasks.append((domain, ip, int(port_str)))
-    return tasks
+def build_tasks(domains: list[str], ip_port_pairs: list[tuple[str, int]]) -> list[tuple]:
+    return [(domain, ip, port) for domain in domains for ip, port in ip_port_pairs]
 
 
 # ── Output helpers ───────────────────────────────────────────────────────────
@@ -155,7 +228,6 @@ def print_summary(results: list[ScanResult], elapsed: float) -> None:
         for r in sorted(ok, key=lambda x: (x.domain, x.ip, x.port)):
             print(f"    {r.domain}  →  {r.ip}:{r.port}  ({r.http_code}, {r.latency_ms:.0f}ms)")
 
-    # Per-domain summary
     print("\n  Per-domain reachability:")
     domains = sorted({r.domain for r in results})
     for d in domains:
@@ -211,7 +283,11 @@ def main() -> None:
     parser.add_argument("--domains", "-d", default="",
                         help="File with one domain per line (default: built-in list)")
     parser.add_argument("--ips", "-i", default="",
-                        help="File with one IP:PORT per line (default: built-in list)")
+                        help="File with IP:PORT entries; supports CIDR ranges (default: built-in list)")
+    parser.add_argument("--cloudflare-ranges", "-c", metavar="PORTS",
+                        help="Scan all Cloudflare IP ranges on given ports, e.g. 443 or 443,8443")
+    parser.add_argument("--sample", "-s", type=int, default=20, metavar="N",
+                        help="Max IPs to randomly sample per CIDR range (default: 20, 0 = unlimited)")
     parser.add_argument("--verbose", "-v", action="store_true",
                         help="Show errors inline")
     parser.add_argument("--working-only", action="store_true",
@@ -219,16 +295,29 @@ def main() -> None:
     args = parser.parse_args()
 
     domains = load_lines(args.domains) if args.domains else DEFAULT_DOMAINS
-    ip_ports = load_lines(args.ips) if args.ips else DEFAULT_IPS_PORTS
+    raw_entries = load_lines(args.ips) if args.ips else list(DEFAULT_IPS_PORTS)
 
-    tasks = build_tasks(domains, ip_ports)
+    if args.cloudflare_ranges:
+        ports = [int(p.strip()) for p in args.cloudflare_ranges.split(",") if p.strip().isdigit()]
+        if not ports:
+            print("--cloudflare-ranges requires at least one valid port, e.g. --cloudflare-ranges 443")
+            sys.exit(1)
+        raw_entries = build_cloudflare_entries(ports)
+        print(f"\n  Using {len(CLOUDFLARE_RANGES)} Cloudflare ranges × {len(ports)} port(s): {ports}")
+
+    sample = args.sample if args.sample > 0 else 0
+    ip_port_pairs = expand_ip_ports(raw_entries, sample)
+
+    tasks = build_tasks(domains, ip_port_pairs)
     total = len(tasks)
 
     print(f"\n{'═'*72}")
     print(f"  SNI Spoofing Scanner")
-    print(f"  Domains: {len(domains)}   IP:Port combos: {len(ip_ports)}   Total probes: {total}")
-    print(f"  Workers: {args.workers}   Timeout: {args.timeout}s")
-    print(f"{'═'*72}\n")
+    print(f"  Domains: {len(domains)}   IP:Port combos: {len(ip_port_pairs)}   Total probes: {total}")
+    print(f"  Workers: {args.workers}   Timeout: {args.timeout}s", end="")
+    if sample:
+        print(f"   Sample: {sample} IPs/range", end="")
+    print(f"\n{'═'*72}\n")
 
     results: list[ScanResult] = []
     done = 0
@@ -256,7 +345,6 @@ def main() -> None:
         base = args.output.rsplit(".", 1)[0]
         save_working_curl(results, base + "_working.sh")
     else:
-        # Always save by default
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         out_json = f"scan_{ts}.json"
         out_sh = f"scan_{ts}_working.sh"
