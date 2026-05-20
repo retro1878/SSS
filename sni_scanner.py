@@ -25,7 +25,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass, asdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -240,7 +240,7 @@ def print_summary(results: list[ScanResult], elapsed: float) -> None:
 
 def save_json(results: list[ScanResult], path: str) -> None:
     data = {
-        "scan_time": datetime.utcnow().isoformat() + "Z",
+        "scan_time": datetime.now(timezone.utc).isoformat(),
         "total": len(results),
         "reachable": sum(1 for r in results if r.success),
         "results": [asdict(r) for r in results],
