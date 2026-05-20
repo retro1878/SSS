@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+scan_*.json
+scan_*.sh
