@@ -31,7 +31,12 @@ INSTALL_DIR=~/.local/bin ./install.sh
 **Behind a SOCKS5 proxy?** Pass it to git before cloning:
 
 ```bash
+# Without authentication
 git clone --config "http.proxy=socks5h://127.0.0.1:1080" https://github.com/retro1878/SSS.git
+
+# With username and password
+git clone --config "http.proxy=socks5h://user:password@127.0.0.1:1080" https://github.com/retro1878/SSS.git
+
 cd SSS
 ./install.sh
 ```
