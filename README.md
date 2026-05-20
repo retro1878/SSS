@@ -31,17 +31,27 @@ INSTALL_DIR=~/.local/bin ./install.sh
 **Behind a SOCKS5 proxy?** Pass it to git before cloning:
 
 ```bash
-# Without authentication
-git clone --config "http.proxy=socks5h://127.0.0.1:1080" https://github.com/retro1878/SSS.git
+# Proxy without authentication
+git clone -c "http.proxy=socks5h://127.0.0.1:1080" \
+  https://github.com/retro1878/SSS.git
 
-# With username and password
-git clone --config "http.proxy=socks5h://user:password@127.0.0.1:1080" https://github.com/retro1878/SSS.git
+# Proxy with username and password
+git clone -c "http.proxy=socks5h://user:password@127.0.0.1:1080" \
+  https://github.com/retro1878/SSS.git
 
 cd SSS
 ./install.sh
 ```
 
 `socks5h` routes DNS through the proxy too — use `socks5` if you want local DNS resolution.
+
+> **Private repo / asked for GitHub credentials?**
+> Embed a GitHub Personal Access Token in the URL:
+> ```bash
+> git clone -c "http.proxy=socks5h://user:password@127.0.0.1:1080" \
+>   https://YOUR_GITHUB_TOKEN@github.com/retro1878/SSS.git
+> ```
+> Generate a token at: GitHub → Settings → Developer settings → Personal access tokens (`repo` scope required).
 
 ---
 
