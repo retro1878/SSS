@@ -45,14 +45,6 @@ cd SSS
 
 `socks5h` routes DNS through the proxy too — use `socks5` if you want local DNS resolution.
 
-> **Private repo / asked for GitHub credentials?**
-> Embed a GitHub Personal Access Token in the URL:
-> ```bash
-> git clone -c "http.proxy=socks5h://user:password@127.0.0.1:1080" \
->   https://YOUR_GITHUB_TOKEN@github.com/retro1878/SSS.git
-> ```
-> Generate a token at: GitHub → Settings → Developer settings → Personal access tokens (`repo` scope required).
-
 ---
 
 ## Usage
